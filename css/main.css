@@ -1,0 +1,261 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Poppins:300,400,500,600,700&subset=latin-ext');
+body {
+	margin: 0;
+  	padding: 0;
+  	position: relative;
+	font-family: 'Poppins', sans-serif;
+}
+header {
+	position: relative;
+	background: url('../img/header-background.png') center center no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'PT Serif', serif;
+	font-size: 14px;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #ffffff;
+}
+.navbar-collapse {
+	padding-top: 24px;
+}
+.navbar-toggle {
+	margin-top: 24px;
+}
+.header-slogan h1{
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 700;
+	text-shadow: 2px 2px 15px #000000;
+}
+.header-slogan h4 {
+	font-family: 'PT Serif', serif;
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 28px;
+	font-weight: 400;
+	padding-top: 40px;
+}
+.header-slogan {
+	padding-left: 0px;
+	padding-top: 250px;
+}
+
+header::after {
+	position: absolute;
+	bottom: -60px;
+	display: block;
+	content:"";
+	background: url('../img/top-shape.png') top center repeat-x;
+	height: 80px;
+	width: 100%;
+}
+
+/*=================SECTION ABOUT================*/
+#about-section {
+	margin-top: 160px;
+	margin-bottom: 0px;
+	background: url('../img/about-image.png') 92% 0% no-repeat;
+	height: 644px;
+	width: 100%;
+	z-index: -1000;
+}
+.section-text{
+	font-family: 'PT Serif', serif;
+	font-size: 16px;
+	color: #aeaeae;
+	line-height: 30px;
+	margin-top: 60px;
+}
+.text-grey {
+	font-family: 'PT Serif', serif;
+	font-size: 64px;
+	color: #e8e8e8;
+}
+.text-dark-grey {
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+	color: #333333;
+	font-weight: 700;
+}
+.text-green {
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+	color: #66a900;
+	font-weight: 700;
+}
+
+/*=================SECTION PRACTICE================*/
+#practice-section {
+	margin-top: -150px;
+	background: url('../img/practice-image.png') 14% -28px no-repeat;
+	height: 454px;
+	width: 100%;
+	z-index: -1000;
+}
+#practice-section ul {
+	padding-top: 30px; 
+}
+#practice-section li {
+	padding-bottom: 15px; 
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	color: #999999;
+	font-weight: 700;
+}
+.number-circle {
+	display: inline-block;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+    background-color: #66a900;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/*=================SECTION REGISTRATION================*/
+#registration-section {
+	position: relative;
+	background-color: #66a900;
+	height: 140px;
+	margin-top: 260px;
+	padding-top: 20px;
+}
+#registration-section::before {
+	position: absolute;
+	top: -145px;
+	display: block;
+	content:"";
+	background: url('../img/registration-shape.png') top center repeat-x;
+	height: 146px;
+	width: 100%;
+}
+#registration-section h2 {
+	font-family: 'PT Serif', serif;
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: bold;
+}
+#registration-section h3 {
+	padding-top: 25px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+}
+#registration-section img {
+	margin-top: 30px;
+}
+.button {
+	display: inline-block;
+    padding: 20px 30px;
+    color: #66a900;
+    background-color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+    font-family: 'PT Serif', serif;
+	font-size: 16px;
+}
+
+/*=================CHOOSE REGISTRATION================*/
+#choose-section {
+	margin-top: 160px;
+	margin-bottom: 0px;
+	background: url('../img/choose-image.png') 92% 0% no-repeat;
+	height: 644px;
+	width: 100%;
+	z-index: -1000;
+}
+.section-text {
+	padding-bottom: 25px;
+}
+.choose-option {
+	position: relative;
+	padding-top: 50px;
+}
+.choose-option .fa {
+	position: absolute;
+	color: #66a900;
+}
+
+.choose-option h3 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	color: #333333;
+	font-weight: 700;
+	padding-left: 35px;
+}
+
+.choose-option h4 {
+	padding-top: 25px;
+	font-family: 'PT Serif', serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #b3b3b3;
+	padding-left: 35px;
+}
+
+/*=================RECOMMENDATIONS PRACTICE================*/
+#recommendations-section {
+	margin-top: 0px;
+	background: url('../img/practice-image.png') 14% -28px no-repeat;
+	height: 454px;
+	width: 100%;
+	z-index: -1000;
+}
