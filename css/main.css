@@ -215,7 +215,7 @@ header::after {
 
 /*=================CHOOSE REGISTRATION================*/
 #choose-section {
-	margin-top: 160px;
+	margin-top: 75px;
 	margin-bottom: 0px;
 	background: url('../img/choose-image.png') 92% 0% no-repeat;
 	height: 644px;
@@ -223,7 +223,7 @@ header::after {
 	z-index: -1000;
 }
 .section-text {
-	padding-bottom: 25px;
+	padding-bottom: 35px;
 }
 .choose-option {
 	position: relative;
@@ -252,10 +252,86 @@ header::after {
 }
 
 /*=================RECOMMENDATIONS PRACTICE================*/
-#recommendations-section {
+#testimonial-section {
+	position: relative;
 	margin-top: 0px;
-	background: url('../img/practice-image.png') 14% -28px no-repeat;
-	height: 454px;
+    height: 454px;
 	width: 100%;
-	z-index: -1000;
+	
+}
+.testimonial-text {
+	font-style: italic;
+	font-size: 14px;
+	padding-left: 30px;
+}
+
+.testimonial-name {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+	line-height: 28px;
+	padding-left: 30px;
+}
+
+.testimonial-age {
+	font-family: 'PT Serif', serif;
+	font-size: 14px;
+	color: #b3b3b3;
+	padding-left: 30px;
+}
+.testimonial-image {
+	padding-bottom: 200px;
+	margin-left: -80px;
+	margin-top: -40px;
+}
+.arrow-left {
+	color: #333333;
+}
+.arrow-right {
+	color: #333333;
+	float:right;
+}
+.arrow-left:hover{
+	color: #66a900;
+}
+.arrow-right:hover {
+	color: #66a900;
+}
+.carousel-control.right {
+  background: transparent;
+  margin-right: -10px;
+}
+
+.carousel-control.left {
+  background: transparent;
+  margin-left: -10px;
+}
+.carousel-inner {
+    overflow: visible;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
 }
