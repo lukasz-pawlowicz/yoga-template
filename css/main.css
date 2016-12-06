@@ -62,15 +62,28 @@ header {
     border-color: transparent;
     font-family: 'PT Serif', serif;
 	font-size: 14px;
+	padding-bottom: 10px;
 }
 .navbar-default .navbar-nav>li>a {
 	color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #ffffff;
+	border-bottom: 2px solid #ffffff;
 }
 .navbar-collapse {
 	padding-top: 24px;
 }
 .navbar-toggle {
 	margin-top: 24px;
+}
+.sticky{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #66a900;
+    border-bottom: 4px solid #609e01; 
 }
 .header-slogan h1{
 	font-family: 'Poppins', sans-serif;
@@ -366,7 +379,6 @@ header::after {
 	font-weight: bold;
 	padding-top: 14px;
 	padding-bottom: 14px;
-	background-color: #f6f6f6;
 	border-left: 2px solid #66a900;
 	border-right: 2px solid #66a900;
 	margin-bottom: 35px;
@@ -393,7 +405,14 @@ header::after {
     background-position: center bottom;
     background-repeat: no-repeat;
 }
-
+.panel-hover-h4 {
+	color: #ffffff;
+	background-color: #66a900;
+}
+.panel-hover-button {
+	color: #66a900;
+	text-decoration: underline;
+}
 /*=================SECTION REGISTRATION================*/
 #registration-section-2 {
 	position: relative;
