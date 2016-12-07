@@ -12,7 +12,9 @@ panel.on("mouseleave", function() {
 
 $(window).on("scroll", function() {
 	if ($(document).scrollTop() > $(".navbar").position().top) {
-		$(".navbar").addClass("sticky");	}
+		$(".navbar").addClass("sticky");
+		//$("body").css("padding-top", "10px")
+	}
 	else {
 		$(".navbar").removeClass("sticky");
 	}

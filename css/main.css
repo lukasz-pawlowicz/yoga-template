@@ -77,6 +77,9 @@ header {
 .navbar-toggle {
 	margin-top: 24px;
 }
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
 .sticky{
     position: fixed;
     right: 0;
@@ -490,4 +493,120 @@ footer p {
 .footer-logo{
 	float: left;
 	padding-left: 0px;
+}
+
+/*=================MEDIA QUERIES================*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	header {
+	height: 800px;
+	}
+	#about-section {
+		background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 100%), url('../img/about-image.png') 92% 0% no-repeat;
+	}
+	#practice-section {
+		background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 100%), url('../img/practice-image.png') 14% -28px no-repeat;
+	}
+	#choose-section {
+		background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 100%), url('../img/choose-image.png') 92% 0% no-repeat;
+
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	header {
+	height: 600px;
+	background-size: auto;
+	}
+	.header-slogan {
+		padding-top: 120px;
+	}
+	#choose-section {
+		background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 100%), url('../img/choose-image.png') 92% 80% no-repeat;
+	}
+	#registration-section, #registration-section-2 {
+		height: 160px;
+	}
+	#testimonial-section {
+		margin-top: 120px;
+	}
+	.testimonial-image {
+		display: none;
+	}
+	.carousel-control.right {
+		position: absolute;
+	  	right: -680px;
+	  	top: 145px;
+	}
+	.carousel-control.left {
+		position: absolute;
+		top: 145px;
+	  left: 125px;
+	}
+	#pricing-section {
+		margin-top: -80px;
+	}
+	.panel-1, .panel-2, .panel-3{
+		background-image: none;
+	}
+	.button-price {
+		margin-bottom: 50px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.header-slogan{
+		padding-left: 25px;
+	}
+	#registration-section h3, #registration-section-2 h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+	}
+	#testimonial-section {
+		margin-top: 165px;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	.header-slogan h1 {
+		font-size: 40px;
+	}
+	#about-section {
+		margin-top: 85px;
+	}
+	#registration-section, #registration-section-2 {
+		height: 200px;
+	}
+	#testimonial-section {
+		margin-top: 225px;
+	}
+	#pricing-section {
+		margin-top: -10px;
+	}
+	footer {
+		padding-top: 70px;
+	}
+}
+@media only screen and (max-width : 400px) {
+	#testimonial-section {
+		margin-bottom: 150px;
+	}
+	#pricing-section {
+		margin-top: 40px;
+	}
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+	#testimonial-section {
+		padding-top: 150px;
+	}
+	#registration-section::before, #registration-section-2::before {
+		background: none;
+	}
+	#practice-section {
+		margin-top: -40px;
+	}
 }
